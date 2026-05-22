@@ -98,6 +98,68 @@
             "name": "FoodyMerge",
             "publisher": { "@id": "https://foodymerge.com/#publisher" },
             "inLanguage": "en"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://foodymerge.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is FoodyMerge free to play?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. FoodyMerge is free to download on the App Store and Google Play. There are optional in-app purchases (small coin and basket packs) but they are never required. The whole game is reachable without spending a cent."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does FoodyMerge have ads?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No interstitial ads. Nothing pops up to interrupt play. The only ads in the game are opt-in rewarded ads: you can choose to watch a short clip in exchange for an extra basket or a bonus coin. If you'd rather not, you will never see one."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When does FoodyMerge release?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoodyMerge arrives on the App Store and Google Play in 2026. Download links will be added the day it ships."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is FoodyMerge safe for kids?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Nothing in the game is designed to upset, scare, hurry, or sell to a child. There are no villains, no timers, no surprise ads, and no gem packs displayed in the UI. The art is hand-illustrated, the orders are gentle, and the game is designed for parents and kids to play together."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does FoodyMerge work offline?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. FoodyMerge is a fully offline game. No account is required, no sign-in, and no Wi-Fi. Save data lives on the device."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What kind of game is FoodyMerge?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoodyMerge is a cozy merge-2 mobile game in the same genre as Travel Town and Merge Mansion. Players combine two identical items to create one of the next tier, climbing chains of fruit, vegetables, gems, and generators. Items are used to fulfill orders from the townsfolk of Plum Hollow, which slowly rebuilds the town. The design emphasizes slow, no-pressure play with no timers and no anxiety mechanics."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who makes FoodyMerge?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoodyMerge is made by Inceptyon Labs LLC, a small indie studio in Tampa, Florida. It is a personal project, built by a developer to play with his son. All NPCs, buildings, and items are hand-illustrated."
+                }
+              }
+            ]
           }
         ]
       }
@@ -126,6 +188,7 @@
         <a href="#play">How it plays</a>
         <a href="#town">Plum Hollow</a>
         <a href="#chains">Chains</a>
+        <a href="#faq">FAQ</a>
       </nav>
     </header>
 
@@ -694,30 +757,95 @@
         </aside>
       </section>
 
-      <!--
-        FAQ STUB — uncomment and fill in before launch.
-        Mirror these Q&As in JSON-LD (FAQPage schema) in <head>.
-        Suggested questions (write the answers yourself):
-          - Is FoodyMerge free to play?
-          - When does FoodyMerge release?
-          - Is FoodyMerge safe for kids?
-          - Does FoodyMerge have ads or in-app purchases?
-          - Does FoodyMerge work offline?
-          - What kind of game is FoodyMerge?
-          - Who makes FoodyMerge?
-        AI search engines (ChatGPT/Perplexity/Gemini) cite FAQPage answers
-        verbatim — this is the #1 GEO win once the answers are real.
-
+      <!-- FAQ -->
       <section id="faq" class="faq" aria-labelledby="faq-title">
-        <h2 id="faq-title" class="section-title">Common questions</h2>
+        <div class="faq__intro">
+          <h2 id="faq-title" class="section-title">Things people ask.</h2>
+          <p class="faq__lede">
+            The plain answers, before you wonder.
+          </p>
+        </div>
+
         <dl class="faq__list">
           <div class="faq__item">
-            <dt>Is FoodyMerge free to play?</dt>
-            <dd>[answer]</dd>
+            <dt class="faq__q">Is FoodyMerge free to play?</dt>
+            <dd class="faq__a">
+              Yes. Free to download on the App Store and Google Play. There are
+              optional in-app purchases &mdash; small coin and basket packs you
+              can buy if you want to skip a slow afternoon &mdash; but they're
+              never required. The whole game is reachable without spending a
+              cent.
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt class="faq__q">Does FoodyMerge have ads?</dt>
+            <dd class="faq__a">
+              No interstitial ads. Nothing pops up to interrupt your tea. The
+              only ads in the game are the kind you choose to watch &mdash; a
+              short clip in exchange for an extra basket or a bonus coin. If
+              you'd rather not, you'll never see one.
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt class="faq__q">When does FoodyMerge release?</dt>
+            <dd class="faq__a">
+              FoodyMerge arrives on the App Store and Google Play in 2026.
+              We'll add the download links the day it ships.
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt class="faq__q">Is FoodyMerge safe for kids?</dt>
+            <dd class="faq__a">
+              Yes. Nothing in the game is designed to upset, scare, hurry, or
+              sell to a child. No villains, no timers, no surprise ads, no
+              gem packs glowing at the top of the screen. The art is sweet,
+              the orders are kind, the NPCs say please and thank you. Kids
+              can play on their own, or sit next to a grown-up and play
+              together.
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt class="faq__q">Does FoodyMerge work offline?</dt>
+            <dd class="faq__a">
+              Yes &mdash; fully offline. No account, no sign-in, no Wi-Fi
+              required. Your farm town lives on the device. Take it on a
+              flight, take it to the cabin, hand the phone to your kid in
+              the backseat.
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt class="faq__q">What kind of game is FoodyMerge?</dt>
+            <dd class="faq__a">
+              A cozy merge-2 game. Two of the same item become one of the
+              next tier &mdash; two apples become an orange, two oranges
+              become a cherry, on up a thirteen-step ladder. You use what
+              you grow to fulfill orders from the townsfolk of Plum Hollow,
+              which slowly rebuilds the town: the bakery reopens, the
+              orchard fills back in, the festival lanterns go up. If you've
+              played Travel Town or Merge Mansion, you know the loop.
+              FoodyMerge is the quieter cousin &mdash; slow, hand-illustrated,
+              no anxiety mechanics.
+            </dd>
+          </div>
+
+          <div class="faq__item">
+            <dt class="faq__q">Who makes FoodyMerge?</dt>
+            <dd class="faq__a">
+              FoodyMerge is made by
+              <a href="https://inceptyon.com/" rel="noopener"><strong>Inceptyon Labs LLC</strong></a>,
+              a small indie studio in Tampa, Florida. It's a personal
+              project &mdash; built by a developer to play with his son, then
+              opened up so other families could play it together too. Every
+              NPC, building, and fruit is hand-illustrated.
+            </dd>
           </div>
         </dl>
       </section>
-      -->
 
       <!-- CLOSING -->
       <section class="closing" aria-labelledby="closing-title">
