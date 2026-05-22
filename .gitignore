@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (in case tooling gets added later)
+node_modules/
+dist/
+.cache/
+
+# Python (the README suggests `python3 -m http.server`)
+__pycache__/
+*.pyc
+
+# Misc
+.impeccable/
