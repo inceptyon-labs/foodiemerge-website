@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>This path leads nowhere — FoodyMerge</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="assets/ui/app_icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap"
+    />
+    <style>
+      :root {
+        --canvas: #fff8e7;
+        --canvas-warm: #fceec6;
+        --ink: #3a2a2e;
+        --ink-soft: #7e4e60;
+        --plum: #7e4e60;
+        --plum-deep: #5a3848;
+        --terracotta: #c8553d;
+        --sage: #9cb380;
+        --honey-edge: #b8884a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--canvas);
+        color: var(--ink);
+        font-family: "Nunito", system-ui, -apple-system, sans-serif;
+        font-weight: 500;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 4rem 1.5rem;
+        text-align: center;
+      }
+      .wrap {
+        max-width: 32rem;
+      }
+      .icon {
+        width: 96px;
+        height: 96px;
+        margin: 0 auto 1.5rem;
+        display: block;
+        animation: float 6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .icon {
+          animation: none;
+        }
+      }
+      .num {
+        font-weight: 900;
+        font-size: clamp(4rem, 14vw, 7rem);
+        line-height: 1;
+        color: var(--terracotta);
+        letter-spacing: -0.02em;
+        margin: 0 0 0.5rem;
+      }
+      h1 {
+        font-weight: 800;
+        font-size: clamp(1.5rem, 4vw, 2.25rem);
+        line-height: 1.2;
+        color: var(--plum-deep);
+        margin: 0 0 1rem;
+      }
+      p {
+        font-size: 1.0625rem;
+        line-height: 1.5;
+        color: var(--ink-soft);
+        margin: 0 0 2rem;
+        max-width: 28rem;
+        margin-inline: auto;
+      }
+      a.home {
+        display: inline-block;
+        padding: 0.875rem 1.5rem;
+        background: var(--plum);
+        color: #fff8e7;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 999px;
+        box-shadow: 0 12px 32px -16px rgba(126, 78, 96, 0.28),
+          0 2px 0 rgba(184, 136, 74, 0.35);
+        transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+          box-shadow 280ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      a.home:hover,
+      a.home:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 40px -16px rgba(126, 78, 96, 0.32),
+          0 2px 0 rgba(184, 136, 74, 0.35);
+        outline: none;
+      }
+      a.home:focus-visible {
+        outline: 3px solid var(--sage);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrap">
+        <img class="icon" src="assets/ui/app_icon.png" alt="" width="96" height="96" />
+        <p class="num">404</p>
+        <h1>This corner of Plum Hollow isn't here yet.</h1>
+        <p>
+          You took a path that doesn't lead anywhere. Nothing's broken — just nothing's
+          built here. Head back to the front door and try again.
+        </p>
+        <a class="home" href="/">← Back to FoodyMerge</a>
+      </div>
+    </main>
+  </body>
+</html>
