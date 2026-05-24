@@ -156,7 +156,7 @@ a:hover {
   font-size: 1.15rem;
   letter-spacing: -0.01em;
 }
-.lockup__foody {
+.lockup__foodie {
   color: var(--plum);
 }
 .lockup__merge {
@@ -237,7 +237,7 @@ a:hover {
   margin: 0 0 1.25rem;
   word-break: keep-all;
 }
-.hero__title-foody {
+.hero__title-foodie {
   color: var(--plum);
   display: inline-block;
   transform: rotate(-1.5deg);

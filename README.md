@@ -2,7 +2,7 @@
   <img src="assets/ui/app_icon.png" alt="FoodieMerge app icon" width="128" height="128">
 </p>
 
-<h1 align="center">foodymerge-website</h1>
+<h1 align="center">foodiemerge-website</h1>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-7E4E60.svg" alt="License: MIT"></a>

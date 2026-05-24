@@ -60,7 +60,7 @@ saturation, any cool grey.
 Line height 1.5 for body, 1.1 for the wordmark, 1.2 for display.
 Max body line length 62ch.
 
-The wordmark "FoodieMerge" gets a two-tone treatment: "Foody" in plum,
+The wordmark "FoodieMerge" gets a two-tone treatment: "Foodie" in plum,
 "Merge" in terracotta. No gradient text. No drop shadow.
 
 ## Spacing and rhythm
