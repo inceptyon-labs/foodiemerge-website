@@ -133,3 +133,41 @@
     sections.forEach((s) => spy.observe(s));
   }
 })();
+
+// Language switcher: open/close the menu, and remember the visitor's choice so
+// the head-script redirect respects it on future visits to the root.
+(() => {
+  const sw = document.querySelector('.langswitch');
+  if (!sw) return;
+  const toggle = sw.querySelector('.langswitch__toggle');
+  const menu = sw.querySelector('.langswitch__menu');
+  if (!toggle || !menu) return;
+
+  const close = () => {
+    sw.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+  const open = () => {
+    sw.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  };
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sw.classList.contains('is-open') ? close() : open();
+  });
+  document.addEventListener('click', (e) => {
+    if (!sw.contains(e.target)) close();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+
+  menu.querySelectorAll('[data-lang]').forEach((a) => {
+    a.addEventListener('click', () => {
+      try {
+        localStorage.setItem('fm_lang', a.getAttribute('data-lang'));
+      } catch (e) {}
+    });
+  });
+})();
