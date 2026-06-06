@@ -12,7 +12,7 @@
         try {
           var path = location.pathname;
           if (path !== "/" && path !== "/index.html") return;
-          var SUP = ["de", "ja", "fr", "es"];
+          var SUP = ["de", "ja", "ko", "fr", "es"];
           var want = null;
           try { want = localStorage.getItem("fm_lang"); } catch (e) {}
           if (!want) {
@@ -34,6 +34,7 @@
     <link rel="alternate" hreflang="en" href="https://foodiemerge.com/" />
     <link rel="alternate" hreflang="de" href="https://foodiemerge.com/de/" />
     <link rel="alternate" hreflang="ja" href="https://foodiemerge.com/ja/" />
+    <link rel="alternate" hreflang="ko" href="https://foodiemerge.com/ko/" />
     <link rel="alternate" hreflang="fr" href="https://foodiemerge.com/fr/" />
     <link rel="alternate" hreflang="es" href="https://foodiemerge.com/es/" />
     <link rel="alternate" hreflang="x-default" href="https://foodiemerge.com/" />
@@ -215,6 +216,7 @@
           <li><a href="https://foodiemerge.com/" data-lang="en" hreflang="en">English</a></li>
           <li><a href="https://foodiemerge.com/de/" data-lang="de" hreflang="de">Deutsch</a></li>
           <li><a href="https://foodiemerge.com/ja/" data-lang="ja" hreflang="ja">日本語</a></li>
+          <li><a href="https://foodiemerge.com/ko/" data-lang="ko" hreflang="ko">한국어</a></li>
           <li><a href="https://foodiemerge.com/fr/" data-lang="fr" hreflang="fr">Français</a></li>
           <li><a href="https://foodiemerge.com/es/" data-lang="es" hreflang="es" aria-current="true">Español</a></li>
         </ul>
@@ -382,15 +384,15 @@
           <figure class="play__shot" aria-labelledby="play-shot-cap">
             <div class="play__shot-frame">
               <img decoding="async"
-                src="/assets/screenshots/board_day_31.png"
-                alt="El tablero de FoodieMerge en el día 31. Una cuadrícula de 7 columnas medio llena de objetos: manzanos y perales, cestas de fruta, un encargo de Jase para construir un horno mediano, 97.377 monedas y 1.126 gemas en el monedero, una fresa y una pitaya en las filas inferiores, tres casillas vacías punteadas."
+                src="/assets/screenshots/board_es.png"
+                alt="Un tablero de FoodieMerge ya avanzada la partida: una cuadrícula de siete columnas llena de fruta, verduras y generadores, un encargo de los habitantes a la derecha, y monedas y gemas en el monedero arriba."
                 width="540"
-                height="1170"
+                height="1174"
                 loading="lazy"
               />
             </div>
             <figcaption id="play-shot-cap" class="play__shot-cap">
-              Una partida real. Día&nbsp;31, encargo de&nbsp;Jase.
+              Un tablero real, muy avanzada la partida.
             </figcaption>
           </figure>
         </div>

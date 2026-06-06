@@ -15,6 +15,7 @@ const LOCALES = [
   { code: "en", dir: "", name: "English", htmlLang: "en", ogLocale: "en_US" },
   { code: "de", dir: "de", name: "Deutsch", htmlLang: "de", ogLocale: "de_DE" },
   { code: "ja", dir: "ja", name: "日本語", htmlLang: "ja", ogLocale: "ja_JP" },
+  { code: "ko", dir: "ko", name: "한국어", htmlLang: "ko", ogLocale: "ko_KR" },
   { code: "fr", dir: "fr", name: "Français", htmlLang: "fr", ogLocale: "fr_FR" },
   { code: "es", dir: "es", name: "Español", htmlLang: "es", ogLocale: "es_ES" },
 ];
@@ -63,6 +64,7 @@ function render(locale) {
     .replaceAll("{{OG_LOCALE}}", locale.ogLocale)
     .replaceAll("{{LD_LANG}}", locale.htmlLang)
     .replaceAll("{{LANG_NAME}}", locale.name)
+    .replaceAll("{{PLAY_SHOT}}", `/assets/screenshots/board_${locale.code}.png`)
     .replace("{{HREFLANG}}", hreflang)
     .replace("{{LANG_LINKS}}", langLinks)
     .replace("{{LD_GAME_DESC}}", JSON.stringify(toText(get("ld_game_desc"))))

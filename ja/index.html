@@ -12,7 +12,7 @@
         try {
           var path = location.pathname;
           if (path !== "/" && path !== "/index.html") return;
-          var SUP = ["de", "ja", "fr", "es"];
+          var SUP = ["de", "ja", "ko", "fr", "es"];
           var want = null;
           try { want = localStorage.getItem("fm_lang"); } catch (e) {}
           if (!want) {
@@ -34,6 +34,7 @@
     <link rel="alternate" hreflang="en" href="https://foodiemerge.com/" />
     <link rel="alternate" hreflang="de" href="https://foodiemerge.com/de/" />
     <link rel="alternate" hreflang="ja" href="https://foodiemerge.com/ja/" />
+    <link rel="alternate" hreflang="ko" href="https://foodiemerge.com/ko/" />
     <link rel="alternate" hreflang="fr" href="https://foodiemerge.com/fr/" />
     <link rel="alternate" hreflang="es" href="https://foodiemerge.com/es/" />
     <link rel="alternate" hreflang="x-default" href="https://foodiemerge.com/" />
@@ -47,14 +48,14 @@
     <meta property="og:image" content="https://foodiemerge.com/assets/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="陽だまりのようなクリーム色の背景に置かれた FoodieMerge のロゴ。Nana Jean と手描きのフルーツのイラスト付き。" />
+    <meta property="og:image:alt" content="陽だまりのようなクリーム色の背景に置かれた FoodieMerge のロゴ。ナナ・ジーンと手描きのフルーツのイラスト付き。" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="FoodieMerge · のんびり楽しむ農村マージゲーム" />
     <meta name="twitter:description" content="iOS・Android 向けのほっこりマージ2ゲーム。Nana Jean から受け継いだ眠そうな農村を、マージしながら少しずつ再建しよう。App Store と Google Play で配信中。" />
     <meta name="twitter:image" content="https://foodiemerge.com/assets/og.png" />
-    <meta name="twitter:image:alt" content="陽だまりのようなクリーム色の背景に置かれた FoodieMerge のロゴ。Nana Jean と手描きのフルーツのイラスト付き。" />
+    <meta name="twitter:image:alt" content="陽だまりのようなクリーム色の背景に置かれた FoodieMerge のロゴ。ナナ・ジーンと手描きのフルーツのイラスト付き。" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/icon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/icon-16.png" />
@@ -82,7 +83,7 @@
             "alternateName": "Foodie Merge",
             "url": "https://foodiemerge.com/",
             "image": "https://foodiemerge.com/assets/ui/app_icon.png",
-            "description": "ほっこり楽しむマージ2モバイルゲーム。Nana Jean から受け継いだ眠そうな農村 Plum Hollow を、マージしながら少しずつ再建しよう。突然の広告なし、悪役なし、焦らせる仕掛けなし。",
+            "description": "ほっこり楽しむマージ2モバイルゲーム。ナナ・ジーンから受け継いだ眠そうな農村 Plum Hollow を、マージしながら少しずつ再建しよう。突然の広告なし、悪役なし、焦らせる仕掛けなし。",
             "genre": ["Cozy game", "Merge", "Casual", "Family"],
             "gamePlatform": ["iOS", "Android"],
             "applicationCategory": "GameApplication",
@@ -148,7 +149,7 @@
                                 "name": "FoodieMerge は子どもに安全ですか？",
                                 "acceptedAnswer": {
                                           "@type": "Answer",
-                                          "text": "はい。子どもを動揺させたり、怖がらせたり、急かしたり、何かを売りつけたりするようには一切作られていません。悪役なし、タイマーなし、突然の広告なし、画面上部で光るジェムパックもなし。やさしいイラスト、思いやりのある注文、PNJ は「お願いします」「ありがとう」と言います。子どもひとりでも、大人のとなりに座って一緒にでも遊べます。"
+                                          "text": "はい。子どもを動揺させたり、怖がらせたり、急かしたり、何かを売りつけたりするようには一切作られていません。悪役なし、タイマーなし、突然の広告なし、画面上部で光るジェムパックもなし。やさしいイラスト、思いやりのある注文、NPC は「お願いします」「ありがとう」と言います。子どもひとりでも、大人のとなりに座って一緒にでも遊べます。"
                                 }
                       },
                       {
@@ -172,7 +173,7 @@
                                 "name": "FoodieMerge は誰が作っていますか？",
                                 "acceptedAnswer": {
                                           "@type": "Answer",
-                                          "text": "FoodieMerge は、フロリダ州タンパの小さなインディースタジオ Inceptyon Labs LLC が制作しています。これは個人的なプロジェクトです — 開発者が息子と遊ぶために作り、ほかのご家族にも一緒に楽しんでもらえるよう公開しました。PNJ も建物もフルーツも、すべて手描きです。"
+                                          "text": "FoodieMerge は、フロリダ州タンパの小さなインディースタジオ Inceptyon Labs LLC が制作しています。これは個人的なプロジェクトです — 開発者が息子と遊ぶために作り、ほかのご家族にも一緒に楽しんでもらえるよう公開しました。NPC も建物もフルーツも、すべて手描きです。"
                                 }
                       }
             ]
@@ -215,6 +216,7 @@
           <li><a href="https://foodiemerge.com/" data-lang="en" hreflang="en">English</a></li>
           <li><a href="https://foodiemerge.com/de/" data-lang="de" hreflang="de">Deutsch</a></li>
           <li><a href="https://foodiemerge.com/ja/" data-lang="ja" hreflang="ja" aria-current="true">日本語</a></li>
+          <li><a href="https://foodiemerge.com/ko/" data-lang="ko" hreflang="ko">한국어</a></li>
           <li><a href="https://foodiemerge.com/fr/" data-lang="fr" hreflang="fr">Français</a></li>
           <li><a href="https://foodiemerge.com/es/" data-lang="es" hreflang="es">Español</a></li>
         </ul>
@@ -234,7 +236,7 @@
               ほっこり楽しむマージ2モバイルゲーム · iOS・Android で配信中
             </p>
             <p class="hero__tagline">
-              Nana Jean から受け継いだ眠そうな農村 <em>Plum&nbsp;Hollow</em> を、マージしながら少しずつよみがえらせよう。追い立てるタイマーなし。悪役なし。あるのは次のマージだけ。
+              ナナ・ジーンから受け継いだ眠そうな農村 <em>Plum&nbsp;Hollow</em> を、マージしながら少しずつよみがえらせよう。追い立てるタイマーなし。悪役なし。あるのは次のマージだけ。
             </p>
 
             <div class="storefront" role="group" aria-label="Get FoodieMerge">
@@ -281,7 +283,7 @@
               <img decoding="async"
                 class="hero__nana"
                 src="/assets/npcs/nana_jean.png"
-                alt="Plum Hollow の家長 Nana Jean。セージグリーンのカーディガンを着てティーカップを持っている"
+                alt="Plum Hollow の家長ナナ・ジーン。セージグリーンのカーディガンを着てティーカップを持っている"
                 width="540"
                 height="800"
                 loading="eager"
@@ -307,7 +309,7 @@
               />
             </div>
             <figcaption id="hero-art-cap" class="hero__cap">
-              Plum Hollow の家長、Nana Jean
+              Plum Hollow の家長、ナナ・ジーン
             </figcaption>
           </figure>
         </div>
@@ -360,7 +362,7 @@
             <div class="pillar__body">
               <h3 class="pillar__head">みんなで持ち帰ろう</h3>
               <p>
-                やさしいイラスト、思いやりのある注文、PNJ は「お願いします」「ありがとう」と言います。ここには、あなたを急かしたり、せっついたり、お子さんに何かを売りつけたりする仕掛けは一切ありません。
+                やさしいイラスト、思いやりのある注文、NPC は「お願いします」「ありがとう」と言います。ここには、あなたを急かしたり、せっついたり、お子さんに何かを売りつけたりする仕掛けは一切ありません。
               </p>
             </div>
           </li>
@@ -382,15 +384,15 @@
           <figure class="play__shot" aria-labelledby="play-shot-cap">
             <div class="play__shot-frame">
               <img decoding="async"
-                src="/assets/screenshots/board_day_31.png"
-                alt="31日目の FoodieMerge の盤面。7列のグリッドが半分ほどアイテムで埋まっている：りんごとなしの木、フルーツバスケット、中型オーブンを作る Jase からのクエスト、財布には97,377コインと1,126ジェム、下の段にはいちごとドラゴンフルーツ、点線で示された空きマスが3つ。"
+                src="/assets/screenshots/board_ja.png"
+                alt="ゲーム終盤の FoodieMerge の盤面：7列のグリッドがフルーツ、野菜、ジェネレーターで埋まり、右側には住人からのクエスト、上部の財布にはコインとジェム。"
                 width="540"
-                height="1170"
+                height="1174"
                 loading="lazy"
               />
             </div>
             <figcaption id="play-shot-cap" class="play__shot-cap">
-              実際のプレイ。31日目、Jase からのクエスト。
+              実際の盤面。セーブデータをかなり進めたところ。
             </figcaption>
           </figure>
         </div>
@@ -444,7 +446,7 @@
                   <span>お届け完了</span>
                 </div>
                 <img decoding="async" loading="lazy" class="loop__deliver-item" src="/assets/items/large_fruit_basket.png" alt="" aria-hidden="true" width="92" height="92" />
-                <img decoding="async" loading="lazy" class="loop__deliver-target" src="/assets/npcs/chef_robert.png" alt="木のスプーンを持つ Robert シェフ" width="120" height="180" />
+                <img decoding="async" loading="lazy" class="loop__deliver-target" src="/assets/npcs/chef_robert.png" alt="木のスプーンを持つシェフ・ロバート" width="120" height="180" />
                 <div class="loop__reward" aria-hidden="true">
                   <img decoding="async" loading="lazy" src="/assets/items/gold_coin.png" alt="" width="28" height="28" />
                   <span>+ 240</span>
@@ -541,43 +543,43 @@
         <h3 class="town__cast-title">…そして、ここに暮らす隣人たち</h3>
         <ul class="cast" aria-label="The townsfolk">
           <li class="cast__card">
-            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/nana_jean.png" alt="セージグリーンのカーディガンを着て、ティーカップを持つ Nana Jean" width="140" height="200" /></div>
-            <h4>Nana Jean</h4>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/nana_jean.png" alt="セージグリーンのカーディガンを着て、ティーカップを持つナナ・ジーン" width="140" height="200" /></div>
+            <h4>ナナ・ジーン</h4>
             <p>村の家長。お茶を注ぎ、通りに名前をつける。</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/papa_zulch.png" alt="オーバーオールと麦わら帽子姿で、野菜のバスケットを持つ Papa Zulch" width="140" height="200" /></div>
-            <h4>Papa Zulch</h4>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/papa_zulch.png" alt="オーバーオールと麦わら帽子姿で、野菜のバスケットを持つパパ・ザルチ" width="140" height="200" /></div>
+            <h4>パパ・ザルチ</h4>
             <p>庭の世話をする。重いバスケットを運んでくれる。</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/mayor_diana.png" alt="プラム色のベストとベージュのズボン姿で、クリップボードを持つ Diana 町長" width="140" height="200" /></div>
-            <h4>Mayor Diana</h4>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/mayor_diana.png" alt="プラム色のベストとベージュのズボン姿で、クリップボードを持つダイアナ市長" width="140" height="200" /></div>
+            <h4>ダイアナ市長</h4>
             <p>クリップボードを手放さない。お祭りの開始時刻を知っている。</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/chef_robert.png" alt="白いコックコートと赤いスカーフ姿で、木のスプーンを持つ Robert シェフ" width="140" height="200" /></div>
-            <h4>Chef Robert</h4>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/chef_robert.png" alt="白いコックコートと赤いスカーフ姿で、木のスプーンを持つシェフ・ロバート" width="140" height="200" /></div>
+            <h4>シェフ・ロバート</h4>
             <p>レストランを再開する。あなたの最高のフルーツを求める。</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/amy.png" alt="朗らかな若い村人 Amy" width="140" height="200" /></div>
-            <h4>Amy</h4>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/amy.png" alt="朗らかな若い村人エイミー" width="140" height="200" /></div>
+            <h4>エイミー</h4>
             <p>土曜の朝に市場の屋台を切り盛りする。</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/landon.png" alt="エプロン姿でフルーツバスケットを持つ少年 Landon" width="140" height="200" /></div>
-            <h4>Landon</h4>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/landon.png" alt="エプロン姿でフルーツバスケットを持つ少年ランドン" width="140" height="200" /></div>
+            <h4>ランドン</h4>
             <p>見習い。自分より大きなバスケットを運ぶ。</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/jase.png" alt="気さくな若い農夫 Jase" width="140" height="200" /></div>
-            <h4>Jase</h4>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/jase.png" alt="気さくな若い農夫ジェイス" width="140" height="200" /></div>
+            <h4>ジェイス</h4>
             <p>果樹園を手伝う。いつも笑顔。</p>
           </li>
           <li class="cast__card">
-            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/screech.png" alt="村の生き物 Screech" width="140" height="200" /></div>
-            <h4>Screech</h4>
+            <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/screech.png" alt="村の生き物スクリーチ" width="140" height="200" /></div>
+            <h4>スクリーチ</h4>
             <p>村の生き物。理由は聞かず、とにかくエサをあげて。</p>
           </li>
         </ul>
@@ -799,7 +801,7 @@
           <div class="faq__item">
             <dt class="faq__q">FoodieMerge は子どもに安全ですか？</dt>
             <dd class="faq__a">
-              はい。子どもを動揺させたり、怖がらせたり、急かしたり、何かを売りつけたりするようには一切作られていません。悪役なし、タイマーなし、突然の広告なし、画面上部で光るジェムパックもなし。やさしいイラスト、思いやりのある注文、PNJ は「お願いします」「ありがとう」と言います。子どもひとりでも、大人のとなりに座って一緒にでも遊べます。
+              はい。子どもを動揺させたり、怖がらせたり、急かしたり、何かを売りつけたりするようには一切作られていません。悪役なし、タイマーなし、突然の広告なし、画面上部で光るジェムパックもなし。やさしいイラスト、思いやりのある注文、NPC は「お願いします」「ありがとう」と言います。子どもひとりでも、大人のとなりに座って一緒にでも遊べます。
             </dd>
           </div>
 
@@ -820,7 +822,7 @@
           <div class="faq__item">
             <dt class="faq__q">FoodieMerge は誰が作っていますか？</dt>
             <dd class="faq__a">
-              FoodieMerge は、フロリダ州タンパの小さなインディースタジオ <a href="https://inceptyon.com/" rel="noopener"><strong>Inceptyon Labs LLC</strong></a> が制作しています。これは個人的なプロジェクトです &mdash; 開発者が息子と遊ぶために作り、ほかのご家族にも一緒に楽しんでもらえるよう公開しました。PNJ も建物もフルーツも、すべて手描きです。
+              FoodieMerge は、フロリダ州タンパの小さなインディースタジオ <a href="https://inceptyon.com/" rel="noopener"><strong>Inceptyon Labs LLC</strong></a> が制作しています。これは個人的なプロジェクトです &mdash; 開発者が息子と遊ぶために作り、ほかのご家族にも一緒に楽しんでもらえるよう公開しました。NPC も建物もフルーツも、すべて手描きです。
             </dd>
           </div>
         </dl>

@@ -1,9 +1,18 @@
 # Localization
 
-The site ships English at the root plus German, Japanese, French, and Spanish
-under `/de/`, `/ja/`, `/fr/`, `/es/`. Every page is plain static HTML — no
-runtime framework — so the Cloudflare deploy is unchanged. Pages are generated
-from one template plus per-language string files.
+The site ships English at the root plus German, Japanese, Korean, French, and
+Spanish under `/de/`, `/ja/`, `/ko/`, `/fr/`, `/es/`. Every page is plain static
+HTML — no runtime framework — so the Cloudflare deploy is unchanged. Pages are
+generated from one template plus per-language string files.
+
+NPC names follow the game: the game only localizes them for CJK scripts, so
+`ja`/`ko` use the katakana/hangul names (ナナ・ジーン, 나나 진) and `de`/`fr`/`es`
+keep the Latin names (Nana Jean). Source: the game's
+`assets/data/locales/<code>.json` `npcs` map.
+
+The "How it plays" board screenshot is per-locale: `assets/screenshots/board_<code>.png`,
+one clean late-game board capture per language, wired by build.mjs via the
+`{{PLAY_SHOT}}` token. To refresh, drop a new `board_<code>.png` in and rebuild.
 
 ## Files
 
@@ -47,7 +56,10 @@ needs Node 18+.
 
 - German runs ~30% longer than English; the layout already absorbs it, but
   re-check the hero and pillar headings if you tighten the design.
-- The Japanese strings are machine-quality and should get a native pass before
-  you rely on them for ranking or paid traffic.
-- Adding a language: add an entry to `LOCALES` in `build.mjs`, add
-  `strings/<code>.json`, add a row to `sitemap.xml`, rebuild.
+- The Japanese and Korean strings are machine-quality and should get a native
+  pass before you rely on them for ranking or paid traffic. The NPC names in
+  those two come straight from the game, so they're safe.
+- Adding a language: add an entry to `LOCALES` in `build.mjs`, add the code to
+  the `SUP` array in the head-script (`index.template.html`), add
+  `strings/<code>.json`, add `board_<code>.png`, add a row to `sitemap.xml`,
+  rebuild.

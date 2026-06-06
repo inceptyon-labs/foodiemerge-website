@@ -12,7 +12,7 @@
         try {
           var path = location.pathname;
           if (path !== "/" && path !== "/index.html") return;
-          var SUP = ["de", "ja", "fr", "es"];
+          var SUP = ["de", "ja", "ko", "fr", "es"];
           var want = null;
           try { want = localStorage.getItem("fm_lang"); } catch (e) {}
           if (!want) {
@@ -34,6 +34,7 @@
     <link rel="alternate" hreflang="en" href="https://foodiemerge.com/" />
     <link rel="alternate" hreflang="de" href="https://foodiemerge.com/de/" />
     <link rel="alternate" hreflang="ja" href="https://foodiemerge.com/ja/" />
+    <link rel="alternate" hreflang="ko" href="https://foodiemerge.com/ko/" />
     <link rel="alternate" hreflang="fr" href="https://foodiemerge.com/fr/" />
     <link rel="alternate" hreflang="es" href="https://foodiemerge.com/es/" />
     <link rel="alternate" hreflang="x-default" href="https://foodiemerge.com/" />
@@ -215,6 +216,7 @@
           <li><a href="https://foodiemerge.com/" data-lang="en" hreflang="en" aria-current="true">English</a></li>
           <li><a href="https://foodiemerge.com/de/" data-lang="de" hreflang="de">Deutsch</a></li>
           <li><a href="https://foodiemerge.com/ja/" data-lang="ja" hreflang="ja">日本語</a></li>
+          <li><a href="https://foodiemerge.com/ko/" data-lang="ko" hreflang="ko">한국어</a></li>
           <li><a href="https://foodiemerge.com/fr/" data-lang="fr" hreflang="fr">Français</a></li>
           <li><a href="https://foodiemerge.com/es/" data-lang="es" hreflang="es">Español</a></li>
         </ul>
@@ -382,15 +384,15 @@
           <figure class="play__shot" aria-labelledby="play-shot-cap">
             <div class="play__shot-frame">
               <img decoding="async"
-                src="/assets/screenshots/board_day_31.png"
-                alt="The FoodieMerge board on day 31. A 7-column grid half full of items: apple and pear trees, fruit baskets, a quest from Jase to build a Medium Oven, 97,377 coins and 1,126 gems in the wallet, a strawberry and a dragon fruit in the lower rows, three empty dashed tiles."
+                src="/assets/screenshots/board_en.png"
+                alt="A late-game FoodieMerge board: a seven-column grid filled with fruit, vegetables, and generators, a quest from the townsfolk on the right, and coins and gems in the wallet up top."
                 width="540"
-                height="1170"
+                height="1174"
                 loading="lazy"
               />
             </div>
             <figcaption id="play-shot-cap" class="play__shot-cap">
-              A real run. Day&nbsp;31, quest from&nbsp;Jase.
+              A real board, deep into a save.
             </figcaption>
           </figure>
         </div>

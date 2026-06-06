@@ -12,7 +12,7 @@
         try {
           var path = location.pathname;
           if (path !== "/" && path !== "/index.html") return;
-          var SUP = ["de", "ja", "fr", "es"];
+          var SUP = ["de", "ja", "ko", "fr", "es"];
           var want = null;
           try { want = localStorage.getItem("fm_lang"); } catch (e) {}
           if (!want) {
@@ -316,10 +316,10 @@
           <figure class="play__shot" aria-labelledby="play-shot-cap">
             <div class="play__shot-frame">
               <img decoding="async"
-                src="/assets/screenshots/board_day_31.png"
+                src="{{PLAY_SHOT}}"
                 alt="{{t.play_shot_alt}}"
                 width="540"
-                height="1170"
+                height="1174"
                 loading="lazy"
               />
             </div>
@@ -476,42 +476,42 @@
         <ul class="cast" aria-label="The townsfolk">
           <li class="cast__card">
             <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/nana_jean.png" alt="{{t.alt_nana}}" width="140" height="200" /></div>
-            <h4>Nana Jean</h4>
+            <h4>{{t.npc_nana}}</h4>
             <p>{{t.c_nana_p}}</p>
           </li>
           <li class="cast__card">
             <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/papa_zulch.png" alt="{{t.alt_papa}}" width="140" height="200" /></div>
-            <h4>Papa Zulch</h4>
+            <h4>{{t.npc_papa}}</h4>
             <p>{{t.c_papa_p}}</p>
           </li>
           <li class="cast__card">
             <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/mayor_diana.png" alt="{{t.alt_diana}}" width="140" height="200" /></div>
-            <h4>Mayor Diana</h4>
+            <h4>{{t.npc_diana}}</h4>
             <p>{{t.c_diana_p}}</p>
           </li>
           <li class="cast__card">
             <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/chef_robert.png" alt="{{t.alt_robert}}" width="140" height="200" /></div>
-            <h4>Chef Robert</h4>
+            <h4>{{t.npc_robert}}</h4>
             <p>{{t.c_robert_p}}</p>
           </li>
           <li class="cast__card">
             <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/amy.png" alt="{{t.alt_amy}}" width="140" height="200" /></div>
-            <h4>Amy</h4>
+            <h4>{{t.npc_amy}}</h4>
             <p>{{t.c_amy_p}}</p>
           </li>
           <li class="cast__card">
             <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/landon.png" alt="{{t.alt_landon}}" width="140" height="200" /></div>
-            <h4>Landon</h4>
+            <h4>{{t.npc_landon}}</h4>
             <p>{{t.c_landon_p}}</p>
           </li>
           <li class="cast__card">
             <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/jase.png" alt="{{t.alt_jase}}" width="140" height="200" /></div>
-            <h4>Jase</h4>
+            <h4>{{t.npc_jase}}</h4>
             <p>{{t.c_jase_p}}</p>
           </li>
           <li class="cast__card">
             <div class="cast__portrait"><img decoding="async" loading="lazy" src="/assets/npcs/screech.png" alt="{{t.alt_screech}}" width="140" height="200" /></div>
-            <h4>Screech</h4>
+            <h4>{{t.npc_screech}}</h4>
             <p>{{t.c_screech_p}}</p>
           </li>
         </ul>
